@@ -77,8 +77,12 @@ public class PhoneBookManager {
         boolean check = false;
         for (int i=0;i<phoneBookList.size();i++) {
             if (phoneBookList.get(i).getPhoneNumber().equals(deletePhoneNumber)) {
-                phoneBookList.remove(i);
-                check = true;
+                System.out.println("Nhấn Y nếu chắc chắn muốn xoá");
+                String comfirm = sc.next();
+                if (comfirm.equalsIgnoreCase("y")) {
+                    phoneBookList.remove(i);
+                    check = true;
+                }
             }
         }
         if (!check) {

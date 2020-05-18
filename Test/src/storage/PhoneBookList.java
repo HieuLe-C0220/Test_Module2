@@ -18,7 +18,7 @@ public class PhoneBookList {
         return instance;
     }
     public File getPhoneBookFile() {
-        return phoneFile;
+        return inFile;
     }
-    private final File phoneFile = new File("D:\\Codegym\\Module2-Java\\Week5\\Test-Module2\\src\\storage\\danhBa.txt");
+    private final File inFile = new File("D:\\Codegym\\Module2-Java\\Week5\\Test-Module2\\Test\\src\\storage\\danhBa.csv");
 }

@@ -14,6 +14,7 @@ public class Synchronized {
     List<PhoneBook> phoneBookList = listManager.phoneBookList;
     public void readToFile(File inFile) {
         try {
+            phoneBookList.clear();
             fileReader = new FileReader(inFile);
             bufferedReader = new BufferedReader(fileReader);
             while ((line = bufferedReader.readLine()) != null) {

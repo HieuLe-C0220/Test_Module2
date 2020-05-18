@@ -75,6 +75,6 @@ public class PhoneBook {
         this.dateOfBirth = dateOfBirth;
     }
     public String toString() {
-        return getPhoneNumber()+","+getGroup()+","+getName()+","+getIntroduce()+","+getAddress()+","+getDateOfBirth()+","+getEmail();
+        return getPhoneNumber()+","+getGroup()+","+getName()+","+getIntroduce()+","+getAddress();
     }
 }
